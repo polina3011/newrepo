@@ -1,0 +1,60 @@
+.teacher{
+    display: inline-block;
+    width: 250px;
+}
+.teacher img{
+    height: 200px;
+    width:150px;
+}
+body{
+    font-family:'Raleway', sans-serif;
+    font-weight:200; 
+    font-style: italic;
+}
+img:hover{
+    box-shadow: 0 0 13px rgba(235, 20, 20, 0.692);
+    cursor: pointer;
+    }
+.class1::after{
+    content:'зав.каф., професор, д.е.н.';
+    }
+.class2::after{
+    content:'професор, д.ф.-м.н.';
+    }
+.class3::after{
+    content:'доцент, к.е.н.';
+    }
+.class4::after{
+    content:'професор, д.е.н.';
+    }
+::after{ 
+    display: block;
+    color: black;
+    font-style: normal;
+    }
+a{
+    text-decoration: none;
+    }
+section{
+    margin:0 auto;
+    width: 760px;
+    }
+h1{
+    text-align: center;
+    }
+    @media (min-width: 1200px) {
+    section {
+        width: 1015px;
+    }
+    }
+    @media (max-width: 960px) {
+    section {
+        width: 505px;
+    }
+    }
+    @media (max-width: 480px) {
+     section {
+         width: 150px;
+    }
+    }
+    
